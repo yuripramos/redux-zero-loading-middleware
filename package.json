@@ -15,7 +15,7 @@
         "load",
         "middleware"
     ],
-    "author": "andre-araujo <andreluis9214@gmail.com>",
+    "author": "Yuri Ramos <Yuri.pramos@gmail.com>",
     "license": "MIT",
     "scripts": {
         "build": "./node_modules/.bin/babel src --out-dir ./",

@@ -1,10 +1,7 @@
-# Redux Loading Middleware.
+# Redux-zero Loading Middleware.
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e981a86667144e13abc56389b6bc3705)](https://app.codacy.com/app/andre_luis9214/redux-loading-middleware?utm_source=github.com&utm_medium=referral&utm_content=andre-araujo/redux-loading-middleware&utm_campaign=badger)
-[![downloads](https://img.shields.io/npm/dm/redux-loading-middleware.svg)](https://www.npmjs.com/package/redux-loading-middleware)
-[![license](https://img.shields.io/github/license/andre-araujo/redux-loading-middleware.svg)]()
 
-A redux middleware to handle global loading fully compatible with [redux](https://github.com/reactjs/redux) and [redux-zero](https://github.com/concretesolutions/redux-zero)
+A redux middleware to handle global loading fully compatible with [redux](https://github.com/reactjs/redux) and [redux-zero](https://github.com/redux-zero/redux-zero)
 
 ## Usage
 
@@ -14,6 +11,25 @@ Also it chains action unresolved promises that runs within 200ms threshold, and 
 ### Install
 
 `npm install redux-loading-middleware --save`
+
+### Add to your redux-zero project
+
+```javascript
+import createStore from "redux-zero";
+import { applyMiddleware } from "redux-zero/middleware"
+import loadingMiddleware from 'redux-loading-middleware';
+
+const initialState = {
+  todos: [],
+  loading: false
+};
+
+const middlewares = applyMiddleware(loadingMiddleware);
+const store = createStore(initialState, middlewares);
+
+export default store;
+
+```
 
 ### Add to your redux project
 
@@ -37,24 +53,7 @@ export default store;
 
 ```
 
-### Add to your redux-zero project
 
-```javascript
-import createStore from "redux-zero";
-import { applyMiddleware } from "redux-zero/middleware"
-import loadingMiddleware from 'redux-loading-middleware';
-
-const initialState = {
-  todos: [],
-  loading: false
-};
-
-const middlewares = applyMiddleware(loadingMiddleware);
-const store = createStore(initialState, middlewares);
-
-export default store;
-
-```
 
 ### Skipping loading
 
