@@ -1,4 +1,4 @@
-# Redux-zero Loading Middleware.
+# Redux-Zero Loading Middleware.
 
 
 A redux middleware to handle global loading fully compatible with [redux](https://github.com/reactjs/redux) and [redux-zero](https://github.com/redux-zero/redux-zero)

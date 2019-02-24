@@ -4,7 +4,7 @@
     "description": "A redux middleware to handle global loading",
     "repository": {
         "type": "git",
-        "url": "https://github.com/andre-araujo/redux-loading-middleware"
+        "url": "https://github.com/yuripramos/redux-zero-loading-middleware"
     },
     "keywords": [
         "react",
@@ -12,7 +12,6 @@
         "redux",
         "redux-zero",
         "loading",
-        "load",
         "middleware"
     ],
     "author": "Yuri Ramos <Yuri.pramos@gmail.com>",
